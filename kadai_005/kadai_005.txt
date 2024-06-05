@@ -1,0 +1,56 @@
+-----@DESKTOP-6QERM4F MINGW64 ~
+$ pwd
+/c/Users/-----
+
+-----@DESKTOP-6QERM4F MINGW64 ~
+$ cd Git
+
+-----@DESKTOP-6QERM4F MINGW64 ~/Git (main)
+$ mkdir git_challenge
+
+-----@DESKTOP-6QERM4F MINGW64 ~/Git (main)
+$ cd git_challenge
+
+-----@DESKTOP-6QERM4F MINGW64 ~/Git/git_challenge (main)
+$ touch hello_world.txt
+
+-----@DESKTOP-6QERM4F MINGW64 ~/Git/git_challenge (main)
+$ echo "Hello,world!" >> hello_world.txt
+
+-----@DESKTOP-6QERM4F MINGW64 ~/Git/git_challenge (main)
+$ git add hello_world.txt
+warning: in the working copy of 'git_challenge/hello_world.txt', LF will be replaced by CRLF the next time Git touches it
+
+-----@DESKTOP-6QERM4F MINGW64 ~/Git/git_challenge (main)
+$ git commit -m "コメント追記"
+[main (root-commit) b30679c] コメント追記
+ 1 file changed, 1 insertion(+)
+ create mode 100644 git_challenge/hello_world.txt
+
+-----@DESKTOP-6QERM4F MINGW64 ~/Git/git_challenge (main)
+$ echo "こんにちは、世界！" >> hello_world.txt
+
+-----@DESKTOP-6QERM4F MINGW64 ~/Git/git_challenge (main)
+$ git add hello_world.txt
+warning: in the working copy of 'git_challenge/hello_world.txt', LF will be replaced by CRLF the next time Git touches it
+
+-----@DESKTOP-6QERM4F MINGW64 ~/Git/git_challenge (main)
+$ git commit -m "日本語訳追記"
+[main 13f8bf9] 日本語訳追記
+ 1 file changed, 1 insertion(+)
+
+-----@DESKTOP-6QERM4F MINGW64 ~/Git/git_challenge (main)
+$ git log
+commit 13f8bf9fb306158f28cb795a52738e66a4d3400b (HEAD -> main)
+Author: hayato634 <-----@gmail.com>
+Date:   Wed Jun 5 01:29:40 2024 +0900
+
+    日本語訳追記
+
+commit b30679c73d6adb748880af6fc40ce3453d250d85
+Author: hayato634 <-----@gmail.com>
+Date:   Wed Jun 5 01:27:53 2024 +0900
+
+    コメント追記
+
+
